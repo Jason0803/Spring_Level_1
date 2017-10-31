@@ -1,0 +1,12 @@
+package di.step1;
+
+import org.springframework.core.io.FileSystemResource;
+
+public class MessageBeanTest {
+
+	public static void main(String[] args) {
+		new FileSystemResource("src\bean.xml");
+
+	}
+
+}

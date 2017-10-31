@@ -1,0 +1,7 @@
+package di.step1;
+
+public interface MessageBean {
+	static void sayHello(String str) {
+		
+	}
+}

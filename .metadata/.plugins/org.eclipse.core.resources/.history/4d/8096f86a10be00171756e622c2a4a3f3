@@ -1,0 +1,16 @@
+package di.step1;
+
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.core.io.Resource;
+
+public class MessageBeanTest {
+
+	public static void main(String[] args) {
+		
+		Resource r = new FileSystemResource("src/bean.xml");
+		System.out.println("1. Bean Config. Doc Successfully Read !");
+		
+		
+	}
+
+}
