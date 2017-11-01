@@ -1,0 +1,7 @@
+package com.kosta.service.impl;
+
+import com.kosta.service.MemberService;
+
+public class MemberServiceImpl implements MemberService {
+
+}
