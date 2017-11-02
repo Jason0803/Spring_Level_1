@@ -1,8 +1,12 @@
 package jdbc;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 
 public class MemberDAOImpl implements MemberDAO{
 	private JdbcTemplate jdbcTemplate;
@@ -21,16 +25,51 @@ public class MemberDAOImpl implements MemberDAO{
 		jdbcTemplate.update(sql.toString(), param);
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<MemberVO> getList() {
-		// TODO Auto-generated method stub
-		return null;
+		String sql = "SELECT * FROM member2";
+		List<MemberVO> list = jdbcTemplate.query(sql, new RowMapper() {
+
+			@Override
+			public Object mapRow(ResultSet rs, int arg1) throws SQLException {//arg1 ?
+				System.out.println("arg1 :: "+arg1);
+
+				MemberVO vo = new MemberVO(
+						rs.getString("id"), 
+						rs.getString("password"), 
+						rs.getString("name"), 
+						rs.getString("address"));
+				return vo;
+
+			}
+		});
+		return list;
 	}
+	
 
 	@Override
 	public MemberVO getSearch(String id) {
-		// TODO Auto-generated method stub
-		return null;
+		String sql = "SELECT * FROM member2 WHERE id=?";
+		Object[] param= {id};
+		
+		MemberVO member = (MemberVO) jdbcTemplate.queryForObject(sql, param, new RowMapper() {
+
+			@Override
+			public Object mapRow(ResultSet rs, int arg1) throws SQLException {
+				System.out.println("arg1 :: "+arg1);
+				
+				MemberVO vo = new MemberVO(
+						rs.getString("id"), 
+						rs.getString("password"), 
+						rs.getString("name"), 
+						rs.getString("address"));
+				
+				return vo;
+			}
+
+		});
+		return member;
 	}
 
 }
