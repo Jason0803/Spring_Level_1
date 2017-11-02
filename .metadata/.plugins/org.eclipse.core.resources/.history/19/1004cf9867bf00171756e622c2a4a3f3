@@ -1,0 +1,14 @@
+package test;
+
+import org.springframework.aop.framework.ProxyFactoryBean;
+
+import api1.MessageImpl;
+
+public class AopAPITest_1 {
+
+	public static void main(String[] args) {
+		ProxyFactoryBean pfBean = new ProxyFactoryBean();
+		pfBean.setTarget(new MessageImpl("AOPAPI"));
+	}
+
+}

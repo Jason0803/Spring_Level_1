@@ -1,0 +1,29 @@
+package api1;
+
+public class MessageImpl implements Message {
+
+	@Override
+	public String print() {
+		
+		return null;
+	}
+
+	@Override
+	public String message() {
+	
+		return null;
+	}
+
+	@Override
+	public void searchMember(String id) {
+		
+		
+	}
+
+	@Override
+	public void searchMemberByAddress(String address) {
+		
+		
+	}
+
+}

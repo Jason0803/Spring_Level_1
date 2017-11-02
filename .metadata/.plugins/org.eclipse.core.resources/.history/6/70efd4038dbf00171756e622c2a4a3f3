@@ -1,0 +1,10 @@
+package jdbc;
+
+import java.util.List;
+
+public interface MemberDAO {
+	void register(MemberVO member);
+	List<MemberVO> getList();
+	
+	
+}

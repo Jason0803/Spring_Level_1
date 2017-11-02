@@ -5,8 +5,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import prob.target.ProductService;
 import solv2.MemberService;
-
-public class AOPTest_3 {
+ 
+ public class AOPTest_3 {
 
 	public static void main(String[] args) {
 		ApplicationContext factory = new ClassPathXmlApplicationContext("resources/sov2.xml");

@@ -1,0 +1,36 @@
+package jdbc;
+
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class MemberDAOImpl implements MemberDAO{
+	private JdbcTemplate jdbcTemplate;
+	
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+
+	@Override
+	public void register(MemberVO member) {
+		StringBuffer sql = new StringBuffer();
+		sql.append("INSERT INTO member2 VALUES(");
+		sql.append("?,?,?,?)");
+		
+		Object[] param = {member.getId(), member.getPassword(), member.getName(), member.getAddress()};
+		jdbcTemplate.update(sql.toString(), param);
+	}
+
+	@Override
+	public List<MemberVO> getList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public MemberVO getSearch(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
