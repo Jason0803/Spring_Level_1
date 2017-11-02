@@ -1,0 +1,20 @@
+package prob.target;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+public class MemberService {
+	private Log log = LogFactory.getLog(getClass());
+	
+	public void register() {
+		// logics..
+		System.out.println("Register : Registered Successfully !");
+		log.info("register member....");
+	}
+	
+	public void findMemberById(Sring id) {
+		// logics..
+		System.out.println("Find : FindMemberById Successfully !");
+		log.info("find member....");
+	}
+}

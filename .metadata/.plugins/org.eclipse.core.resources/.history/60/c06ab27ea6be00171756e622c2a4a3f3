@@ -1,0 +1,16 @@
+package com.kosta.di.impl;
+
+import com.kosta.di.MessageBean;
+
+public class MessageBeanImpl implements MessageBean {
+	private String name; 		// Constructor
+	private String greeting; 	// Setter
+	
+	
+	@Override
+	public void sayHello() {
+		System.out.println(name + "::" +greeting);
+		
+	}
+
+}

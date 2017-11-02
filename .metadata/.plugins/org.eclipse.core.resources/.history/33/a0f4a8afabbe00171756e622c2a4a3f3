@@ -1,0 +1,19 @@
+package com.kosta.di.impl;
+
+import com.kosta.di.OutputBean;
+
+public class FileOutputBeanImpl implements OutputBean {
+	private String path;
+
+	public void setPath(String path) {
+		this.path = path;
+	}
+
+	@Override
+	public void output(String message) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

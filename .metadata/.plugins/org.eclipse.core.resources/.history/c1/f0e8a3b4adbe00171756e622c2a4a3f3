@@ -1,0 +1,18 @@
+package test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.kosta.di.MessageBean;
+import com.kosta.di.OutputBean;
+
+public class Test_2 {
+	public static void main(String[] args) {
+		ApplicationContext factory = new ClassPathXmlApplicationContext("resources/messageBean2.xml");
+		MessageBean bean_1 = (MessageBean) factory.getBean("messageBean");
+		bean_1.sayHello();
+		
+		OutputBean bean_2 = (OutputBean) factory.getBean("fileOutputBean");
+		bean_2.output("hi");
+	}
+}

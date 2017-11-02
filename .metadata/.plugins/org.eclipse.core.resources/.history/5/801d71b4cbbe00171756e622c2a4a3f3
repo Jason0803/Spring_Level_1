@@ -1,0 +1,18 @@
+package prob.target;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+public class ProductService {
+	private Log log = LogFactory.getLog(getClass());
+	
+	public void deleteProduct() {
+		System.out.println("Product Deleted !");
+		log.info("product delete...");
+	}
+	
+	public void updateProduct() {
+		System.out.println("Product Updated !");
+		log.info("product update...");
+	}
+}

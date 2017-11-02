@@ -1,0 +1,13 @@
+package prob.target;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+public class MemberService {
+	private Log log = LogFactory.getLog(getClass());
+	
+	public void register() {
+		// logics..
+		System.out.println("Register : Registered Successfully !");
+	}
+}

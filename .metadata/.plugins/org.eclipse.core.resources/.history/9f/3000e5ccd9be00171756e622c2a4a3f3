@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="member" class="solv2.MemberService"></bean>
+	<bean id="product" class="solv2.ProductService"></bean>
+	<bean id="advice" class="solv2.ServiceAdvice"></bean>
+	
+<aop:config>
+    <aop:aspect id="loggingAspect" ref="advice">
+		<aop:pointcut expression="within(solv2..)" id=""></aop:pointcut>
+		<aop:around method="logPush"></aop:around>
+    </aop:aspect>
+</aop:config>	
+
+</beans>

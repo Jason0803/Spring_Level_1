@@ -1,0 +1,43 @@
+package solv2;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+/*
+ * �����Ͻ� ������ ����ִ� Target Ŭ����
+ * �ٽ����� ������ ���̿� �μ����� ���ɰ�( Cross Cutting Concern)�� ��������� ����ִ�.
+ * OOP�� ������ �帮�� �ִ�.
+ */
+public class MemberService {
+	
+	public void register() {
+		//�����Ͻ� ������ ����ֵ�...
+		System.out.println("member registered !....");
+
+	}
+	
+	public void findMemberById(String id) {
+		//�����Ͻ� ������ ����ֵ�...
+		System.out.println( id+" member found !......");
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
