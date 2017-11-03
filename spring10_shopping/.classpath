@@ -13,5 +13,22 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/Spring/lib/com.springsource.javax.inject-1.0.0.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/Spring/lib/com.springsource.org.aopalliance-1.0.0.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/Spring/lib/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/Spring/lib/com.springsource.org.apache.log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/Spring/lib/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/Spring/lib/spring-aop-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/Spring/lib/spring-aspects-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/Spring/lib/spring-beans-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/Spring/lib/spring-context-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/Spring/lib/spring-core-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/Spring/lib/spring-expression-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/Spring/lib/spring-jdbc-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/Spring/lib/spring-tx-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/Spring/lib/spring-web-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/Spring/lib/spring-webmvc-3.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/jstl/jstl.jar"/>
+	<classpathentry kind="lib" path="/Users/Jason/Documents/Development/APIs/jstl/standard.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

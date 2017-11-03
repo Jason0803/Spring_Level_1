@@ -5314,3 +5314,160 @@ java.net.UnknownHostException: spring.io: unknown error
 
 !ENTRY com.android.ide.eclipse.adt 1 0 2017-11-03 09:18:06.921
 !MESSAGE No valid Android XML Editor Delegate found for file /spring09_mvc/WebContent/WEB-INF/dispatcher-servlet.xml [Res null, type null]
+!SESSION 2017-11-03 09:46:12.619 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_74
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/Jason/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -data /Users/Jason/Documents/Development/Spring_Level_1 -product org.eclipse.epp.package.java.product -keyring /Users/Jason/.eclipse_keyring -showlocation
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2017-11-03 09:46:13.948
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.dash [1351]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.springframework.ide.eclipse.boot.dash [osgi.identity; osgi.identity="org.springframework.ide.eclipse.boot.dash"; type="osgi.bundle"; version:Version="3.8.4.201703310634-RELEASE"; singleton:="true"] because it is exposed to package 'javax.xml.ws.handler' from resources org.eclipse.osgi [osgi.identity; osgi.identity="org.eclipse.osgi"; type="osgi.bundle"; version:Version="3.10.102.v20160118-1700"; singleton:="true"] and javax.xml.ws [osgi.identity; osgi.identity="javax.xml.ws"; type="osgi.bundle"; version:Version="2.1.0.v200902101523"] via two dependency chains.
+
+Chain 1:
+  org.springframework.ide.eclipse.boot.dash [osgi.identity; osgi.identity="org.springframework.ide.eclipse.boot.dash"; type="osgi.bundle"; version:Version="3.8.4.201703310634-RELEASE"; singleton:="true"]
+    require: (osgi.wiring.bundle=org.eclipse.core.runtime)
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; osgi.identity="org.eclipse.osgi"; type="osgi.bundle"; version:Version="3.10.102.v20160118-1700"; singleton:="true"]
+
+Chain 2:
+  org.springframework.ide.eclipse.boot.dash [osgi.identity; osgi.identity="org.springframework.ide.eclipse.boot.dash"; type="osgi.bundle"; version:Version="3.8.4.201703310634-RELEASE"; singleton:="true"]
+    require: (osgi.wiring.bundle=org.springframework.web)
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="4.3.0.20160611-RELEASE"; osgi.wiring.bundle="org.springframework.web"
+  org.springframework.web [osgi.identity; osgi.identity="org.springframework.web"; type="osgi.bundle"; version:Version="4.3.0.20160611-RELEASE"]
+    import: (&(osgi.wiring.package=javax.xml.ws.handler)(version>=0.0.0))
+     |
+    export: osgi.wiring.package: javax.xml.ws.handler
+  javax.xml.ws [osgi.identity; osgi.identity="javax.xml.ws"; type="osgi.bundle"; version:Version="2.1.0.v200902101523"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.net 1 0 2017-11-03 09:46:13.971
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2017-11-03 09:46:18.083
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-11-03 09:46:18.083
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76fa3dd8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@58f27c37,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-11-03 09:46:18.083
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@78ae34f7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3eb4fdd5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-11-03 09:46:18.083
+!MESSAGE A conflict occurred for ALT+COMMAND+Q P:
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.php.ui.explorer,PHP Script Explorer,
+		Shows the Script Explorer,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@19070326,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@52dfd7f5,
+		[Parameter(org.eclipse.ui.views.showView.viewId,View,null,true), Parameter(org.eclipse.ui.views.showView.secondaryId,Secondary Id,null,true), Parameter(org.eclipse.ui.views.showView.makeFast,As FastView,null,true)],,true),[org.eclipse.core.commands.Parameterization@351c7030]),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2017-11-03 10:48:58.413
+!MESSAGE No valid Android XML Editor Delegate found for file /spring10_shopping/WebContent/WEB-INF/web.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2017-11-03 10:49:48.280
+!MESSAGE No valid Android XML Editor Delegate found for file /spring10_shopping/WebContent/WEB-INF/web.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2017-11-03 10:51:33.638
+!MESSAGE No valid Android XML Editor Delegate found for file /spring09_mvc/WebContent/WEB-INF/web.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2017-11-03 10:51:37.145
+!MESSAGE No valid Android XML Editor Delegate found for file /spring09_mvc/WebContent/WEB-INF/beanConfig.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2017-11-03 11:24:10.589
+!MESSAGE No valid Android XML Editor Delegate found for file /spring10_shopping/WebContent/WEB-INF/web.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2017-11-03 11:24:50.323
+!MESSAGE No valid Android XML Editor Delegate found for file /spring10_shopping/WebContent/WEB-INF/web.xml [Res null, type null]
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-11-03 11:33:07.853
+!MESSAGE cacheFile=file:/Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.wst.server.discovery/serverAdapterSitesDetails.xml
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2017-11-03 11:34:58.951
+!MESSAGE No projects found for [/Users/Jason/Documents/Development/Spring_Level_1/spring10_shopping/WebContent/WEB-INF/web.xml]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2017-11-03 12:30:45.852
+!MESSAGE No valid Android XML Editor Delegate found for file /spring10_shopping/src/config/businessLogicBean.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2017-11-03 12:31:02.083
+!MESSAGE No projects found for [/Users/Jason/Documents/Development/Spring_Level_1/spring10_shopping/src/config/businessLogicBean.xml]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2017-11-03 12:31:26.362
+!MESSAGE No projects found for [/Users/Jason/Documents/Development/Spring_Level_1/spring10_shopping/src/config/businessLogicBean.xml]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2017-11-03 12:31:27.704
+!MESSAGE No valid Android XML Editor Delegate found for file /spring10_shopping/src/config/presentationBean.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2017-11-03 12:31:34.518
+!MESSAGE No projects found for [/Users/Jason/Documents/Development/Spring_Level_1/spring10_shopping/src/config/presentationBean.xml]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2017-11-03 12:31:51.892
+!MESSAGE No valid Android XML Editor Delegate found for file /spring10_shopping/WebContent/WEB-INF/web.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2017-11-03 12:32:13.194
+!MESSAGE No valid Android XML Editor Delegate found for file /spring10_shopping/src/config/presentationBean.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2017-11-03 12:32:25.166
+!MESSAGE No projects found for [/Users/Jason/Documents/Development/Spring_Level_1/spring10_shopping/src/config/presentationBean.xml]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2017-11-03 12:33:21.330
+!MESSAGE No valid Android XML Editor Delegate found for file /spring10_shopping/WebContent/WEB-INF/web.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2017-11-03 12:33:27.117
+!MESSAGE No projects found for [/Users/Jason/Documents/Development/Spring_Level_1/spring10_shopping/WebContent/WEB-INF/web.xml]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2017-11-03 12:34:35.080
+!MESSAGE No projects found for [/Users/Jason/Documents/Development/Spring_Level_1/spring10_shopping/WebContent/WEB-INF/web.xml]

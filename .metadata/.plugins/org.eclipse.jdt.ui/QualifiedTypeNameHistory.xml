@@ -1,2 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.core.io.FileSystemResource"/>
+<fullyQualifiedTypeName name="org.springframework.core.io.Resource"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
+<fullyQualifiedTypeName name="org.apache.naming.resources.Resource"/>
+<fullyQualifiedTypeName name="com.kosta.service.MemberService"/>
+<fullyQualifiedTypeName name="org.apache.catalina.core.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="solv1.MemberService"/>
+<fullyQualifiedTypeName name="solv1.ProductService"/>
+<fullyQualifiedTypeName name="solv1.ServiceAdvice"/>
+<fullyQualifiedTypeName name="org.apache.commons.logging.LogFactory"/>
+<fullyQualifiedTypeName name="org.apache.commons.logging.Log"/>
+<fullyQualifiedTypeName name="solv2.MemberService"/>
+<fullyQualifiedTypeName name="prob.target.ProductService"/>
+<fullyQualifiedTypeName name="org.aopalliance.intercept.MethodInterceptor"/>
+<fullyQualifiedTypeName name="org.springframework.aop.framework.ProxyFactoryBean"/>
+<fullyQualifiedTypeName name="api1.MessageImpl"/>
+<fullyQualifiedTypeName name="org.springframework.aop.support.NameMatchMethodPointcut"/>
+<fullyQualifiedTypeName name="org.springframework.aop.support.DefaultPointcutAdvisor"/>
+<fullyQualifiedTypeName name="api1.MessageAdvice"/>
+<fullyQualifiedTypeName name="api1.Message"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="logic.Item"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.simple.SimpleJdbcTemplate"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.support.JdbcDaoSupport"/>
+</qualifiedTypeNameHistroy>

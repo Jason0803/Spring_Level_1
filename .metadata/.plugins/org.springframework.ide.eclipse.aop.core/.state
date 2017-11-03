@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="Spring01_DI"/>
+<aop-project name="Spring04_DI"/>
+<aop-project name="Test"/>
+<aop-project name="spring02_DI"/>
+<aop-project name="spring06_apo">
+<aspect-definition advice-class-name="solv2.ServiceAdvice" advice-method-name="logPush" advice-type="AROUND" aspect-end-line-number="17" aspect-name="advice" aspect-start-line-number="17" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/spring06_apo/src/resources/solv2.xml" pointcut-expression="within(solv2..*)" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring06_apo|3:src/resources/solv2.xml|7:beans:6|8:member:10" bean-file="/spring06_apo/src/resources/solv2.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring06_apo/src/resources/solv2.xml" source="=spring06_apo/src&lt;solv2{ServiceAdvice.java[ServiceAdvice~logPush~QProceedingJoinPoint;" source-start-line="10" target="=spring06_apo/src&lt;solv2{MemberService.java[MemberService~register" target-start-line="13"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring06_apo|3:src/resources/solv2.xml|7:beans:6|8:member:10" bean-file="/spring06_apo/src/resources/solv2.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring06_apo/src/resources/solv2.xml" source="=spring06_apo/src&lt;solv2{ServiceAdvice.java[ServiceAdvice~logPush~QProceedingJoinPoint;" source-start-line="10" target="=spring06_apo/src&lt;solv2{MemberService.java[MemberService~findMemberById~QString;" target-start-line="19"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring06_apo|3:src/resources/solv2.xml|7:beans:6|8:product:11" bean-file="/spring06_apo/src/resources/solv2.xml" bean-start-line="11" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring06_apo/src/resources/solv2.xml" source="=spring06_apo/src&lt;solv2{ServiceAdvice.java[ServiceAdvice~logPush~QProceedingJoinPoint;" source-start-line="10" target="=spring06_apo/src&lt;solv2{ProductService.java[ProductService~updateProduct" target-start-line="17"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring06_apo|3:src/resources/solv2.xml|7:beans:6|8:product:11" bean-file="/spring06_apo/src/resources/solv2.xml" bean-start-line="11" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring06_apo/src/resources/solv2.xml" source="=spring06_apo/src&lt;solv2{ServiceAdvice.java[ServiceAdvice~logPush~QProceedingJoinPoint;" source-start-line="10" target="=spring06_apo/src&lt;solv2{ProductService.java[ProductService~deleteProduct" target-start-line="13"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="spring08_jdbc"/>
+</aop-reference-model>
