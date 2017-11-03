@@ -5471,3 +5471,6 @@ Binding(ALT+COMMAND+Q P,
 
 !ENTRY com.android.ide.eclipse.adt 2 0 2017-11-03 12:34:35.080
 !MESSAGE No projects found for [/Users/Jason/Documents/Development/Spring_Level_1/spring10_shopping/WebContent/WEB-INF/web.xml]
+
+!ENTRY org.eclipse.core.jobs 2 2 2017-11-03 14:03:22.232
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob

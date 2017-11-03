@@ -31,8 +31,10 @@
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="logic.Item"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.simple.SimpleJdbcTemplate"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.support.JdbcDaoSupport"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.Controller"/>
+<fullyQualifiedTypeName name="logic.Item"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
